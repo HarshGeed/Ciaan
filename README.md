@@ -138,6 +138,31 @@ types/
 - Protected API routes that require authentication
 - XSS protection through proper data sanitization
 
+## Deployment
+
+This project is deployment-ready for platforms like Vercel, Netlify, and Railway.
+
+### Quick Deployment Steps:
+
+1. **Set Environment Variables**:
+   ```bash
+   MONGODB_URI=your_mongodb_connection_string
+   JWT_SECRET=your_jwt_secret_key
+   NODE_ENV=production
+   ```
+
+2. **Deploy to Vercel** (Recommended):
+   - Connect your GitHub repository to Vercel
+   - Add environment variables in Vercel dashboard
+   - Deploy automatically on push
+
+3. **MongoDB Setup**:
+   - Use MongoDB Atlas for cloud database
+   - Allow network access from `0.0.0.0/0`
+   - Use the connection string in `MONGODB_URI`
+
+For detailed deployment instructions, see [DEPLOYMENT.md](./DEPLOYMENT.md).
+
 ## Future Enhancements
 
 Potential features that could be added:
