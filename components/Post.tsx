@@ -28,7 +28,7 @@ const Post: React.FC<PostProps> = ({ post }) => {
   };
 
   return (
-    <div className="bg-white rounded-lg shadow p-6 mb-4">
+    <div className="rounded-lg shadow-lg p-6 mb-4 bg-[#c7ccd8]">
       <div className="flex items-start space-x-3">
         <div className="flex-shrink-0">
           <div className="w-10 h-10 bg-blue-500 rounded-full flex items-center justify-center text-white font-semibold">

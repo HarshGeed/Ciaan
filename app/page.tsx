@@ -1,5 +1,4 @@
 'use client';
-
 import { useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation';
 import { useAuth } from '@/contexts/AuthContext';
@@ -60,7 +59,7 @@ export default function Home() {
 
   if (authLoading || loading) {
     return (
-      <div className="min-h-screen bg-gray-50">
+      <div className="min-h-screen">
         <Navigation />
         <div className="flex justify-center items-center pt-20">
           <div className="text-lg">Loading...</div>
@@ -74,11 +73,11 @@ export default function Home() {
   }
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen">
       <Navigation />
       
       <div className="max-w-2xl mx-auto pt-8 px-4">
-        <h1 className="text-3xl font-bold text-gray-900 mb-8">Home Feed</h1>
+        <h1 className="text-3xl font-bold text-gray-900 mb-6">Home Feed</h1>
         
         <CreatePost onPostCreated={handlePostCreated} />
         

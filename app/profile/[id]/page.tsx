@@ -78,7 +78,7 @@ const ProfilePage = () => {
 
   if (authLoading || loading) {
     return (
-      <div className="min-h-screen bg-gray-50">
+      <div className="min-h-screen">
         <Navigation />
         <div className="flex justify-center items-center pt-20">
           <div className="text-lg">Loading...</div>
@@ -89,7 +89,7 @@ const ProfilePage = () => {
 
   if (error) {
     return (
-      <div className="min-h-screen bg-gray-50">
+      <div className="min-h-screen">
         <Navigation />
         <div className="max-w-2xl mx-auto pt-8 px-4">
           <div className="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded">
@@ -102,7 +102,7 @@ const ProfilePage = () => {
 
   if (!profileData) {
     return (
-      <div className="min-h-screen bg-gray-50">
+      <div className="min-h-screen">
         <Navigation />
         <div className="max-w-2xl mx-auto pt-8 px-4">
           <div className="text-center">User not found</div>
@@ -112,7 +112,7 @@ const ProfilePage = () => {
   }
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen">
       <Navigation />
       
       <div className="max-w-2xl mx-auto pt-8 px-4">

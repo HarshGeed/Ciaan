@@ -48,7 +48,7 @@ const CreatePost: React.FC<CreatePostProps> = ({ onPostCreated }) => {
   if (!user) return null;
 
   return (
-    <div className="bg-white rounded-lg shadow p-6 mb-6">
+    <div className="bg-white rounded-lg shadow-xl p-6 mb-6">
       <div className="flex items-start space-x-3">
         <div className="flex-shrink-0">
           <div className="w-10 h-10 bg-blue-500 rounded-full flex items-center justify-center text-white font-semibold">

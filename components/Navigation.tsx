@@ -2,6 +2,7 @@
 
 import Link from 'next/link';
 import { useAuth } from '@/contexts/AuthContext';
+import SearchBar from '@/components/SearchBar';
 
 const Navigation = () => {
   const { user, logout } = useAuth();
@@ -18,6 +19,13 @@ const Navigation = () => {
           <Link href="/" className="text-xl font-bold">
             Ciaan
           </Link>
+          
+          {/* Search Bar - Only show when user is logged in */}
+          {user && (
+            <div className="flex-1 max-w-md mx-8">
+              <SearchBar className="w-full" />
+            </div>
+          )}
           
           <div className="flex items-center space-x-4">
             {user ? (
