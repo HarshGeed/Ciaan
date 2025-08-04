@@ -76,45 +76,6 @@ A mini LinkedIn-like community platform built with Next.js, TypeScript, MongoDB,
 5. **View Profiles**: Click on any user's name to view their profile and posts
 6. **Logout**: Use the logout button in the navigation
 
-## Project Structure
-
-```
-app/
-├── api/
-│   ├── auth/
-│   │   ├── login/route.ts         # Login API endpoint
-│   │   ├── register/route.ts      # Registration API endpoint
-│   │   ├── logout/route.ts        # Logout API endpoint
-│   │   └── me/route.ts           # Get current user info
-│   ├── posts/route.ts            # Posts CRUD operations
-│   └── users/[id]/route.ts       # User profile API
-├── auth/
-│   ├── login/page.tsx            # Login page
-│   └── register/page.tsx         # Registration page
-├── profile/[id]/page.tsx         # User profile page
-├── layout.tsx                    # Root layout with AuthProvider
-└── page.tsx                      # Home feed page
-
-components/
-├── Navigation.tsx                # Main navigation component
-├── Post.tsx                      # Individual post component
-└── CreatePost.tsx               # Post creation component
-
-contexts/
-└── AuthContext.tsx              # Authentication context
-
-lib/
-├── mongodb.ts                   # MongoDB connection
-└── auth.ts                      # Authentication utilities
-
-models/
-├── User.ts                      # User model
-└── Post.ts                      # Post model
-
-types/
-└── global.d.ts                  # Global type declarations
-```
-
 ## API Endpoints
 
 ### Authentication
@@ -161,8 +122,6 @@ This project is deployment-ready for platforms like Vercel, Netlify, and Railway
    - Allow network access from `0.0.0.0/0`
    - Use the connection string in `MONGODB_URI`
 
-For detailed deployment instructions, see [DEPLOYMENT.md](./DEPLOYMENT.md).
-
 ## Future Enhancements
 
 Potential features that could be added:
@@ -175,11 +134,3 @@ Potential features that could be added:
 - Email verification
 - Password reset functionality
 - Admin panel
-
-## Contributing
-
-This is a learning project. Feel free to fork, modify, and experiment with the code!
-
-## License
-
-MIT License - feel free to use this code for learning and personal projects.
