@@ -1,7 +1,8 @@
 # Ciaan - Mini LinkedIn Community Platform
 
 A mini LinkedIn-like community platform built with Next.js, TypeScript, MongoDB, and Tailwind CSS.
-You can visit this at ciaan-nnad.vercel.app
+
+You can visit this at [ciaan-nnad.vercel.app](ciaan-nnad.vercel.app)
 
 ## Features
 
